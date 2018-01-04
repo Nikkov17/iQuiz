@@ -1,0 +1,23 @@
+security:
+    providers:
+        db_provider:
+            entity:
+                class: AppBundle:Users
+                property: user_name
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|ima1ges|js)/
+            security: false
+        main:
+            anonymous: ~
+
+            http_basic: ~
+            provider: db_provider
+
+    access_control:
+#        - { path: ^/SignUp, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/SignIn, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+#        - { path: ^/Rules, roles: ROLE_USER }
+#        - { path: ^/Play, roles: ROLE_USER }
+#        - { path: ^/AdminMainPage, roles: ROLE_ADMIN }

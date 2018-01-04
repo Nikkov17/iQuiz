@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        {% block title %}
+            Quiz Create
+        {% endblock %}
+    </title>
+    <style>
+        {% block stylesheets %}
+        html{font-family: "Arial Black", serif ;}
+        body{background: url(background.jpg) repeat;}
+        .logo{margin-left:10px;height:250px;width: 250px;}
+        .Header{margin-top:5px;border-radius: 10px;background: url(grey-background.jpg) repeat;height:238px;}
+        ul a{text-decoration: none;color:white;}
+        .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
+        .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .MenuLi:hover{background-color: #259eff;}
+        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:50px;width:auto;}
+        .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .AdminMenuLi:hover{background-color: #259eff;}
+        .AdminFun{float:left;margin-left: 300px;margin-top: 50px;font-size:30px;color: #998e96; padding-right: 10px;}
+        .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
+        .LoginButton a{color:white;}
+        .CreateQuiz{margin-left:20px;margin-top:30px; position: absolute;color:Green;font-size: 25px;}
+        .ForForm{color:#6775bc;padding-left:20px; padding-bottom: 2px; font-size: 15px}
+        .loginText{font-size: 15px;}
+        .Login:hover{color:#6b9311;}
+        span{display: inline-block;width:300px;}
+        .questionList{list-style-type: none;color:white;border:2px solid grey;background-color: #474747;margin-top:350px;}
+        .listName{color:darkorange;font-size: 25px;}
+        {% endblock %}
+    </style>
+</head>
+<body>
+{% block body %}
+    <div class="Header">
+        <img class="logo" src="{{ asset('logo.png') }}" alt="iQuiz">
+        <ul class="Menu">
+            <li class="MenuLi"><a href="http://stilltrying/web/AdminMainPage" class="MainPage">Main Page</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Rules" class="Rules">Rules</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Ratings" class="Ratings">Ratings</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Contacts" class="Contacts">Contacts</a></li>
+        </ul>
+        <div class="LoginButton"><a href="http://stilltrying/web/{{ login }}" class="Login">{{ login }}</a>
+            <p class="loginText">({{ loginText }})</p>
+        </div>
+        <p class="AdminFun">Admin functions: </p>
+        <ul class="AdminMenu">
+            <li class="AdminMenuLi"><a href="http://stilltrying/web/QuestionCreate" class="">Create/Edit Question</a></li>
+            <li class="inActive">Quiz Create</li>
+        </ul>
+    </div>
+    </div>
+    <div class="CreateQuiz">
+        <p>Quiz Questions:</p>
+        <form action="" method="post" name="CreateQuestion">
+
+            <span><p class="ForForm"><label for="Quiz">Enter name of your Quiz:</label>
+            <input name="Quiz" type="text" size="45"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_1">Question #1 id:</label>
+            <input name="Question_1" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_2">Question #2 id:</label>
+            <input name="Question_2" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_3">Question #3 id:</label>
+            <input name="Question_3" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_4">Question #4 id:</label>
+            <input name="Question_4" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_5">Question #5 id:</label>
+            <input name="Question_5" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_6">Question #6 id:</label>
+            <input name="Question_6" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_7">Question #7 id:</label>
+            <input name="Question_7" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_8">Question #8 id:</label>
+            <input name="Question_8" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_9">Question #9 id:</label>
+            <input name="Question_9" type="text" size="4"/></p></span>
+
+            <span><p class="ForForm"><label for="Question_10">Question #10 id:</label>
+            <input name="Question_10" type="text" size="4"/></p></span>
+
+            <input class="submit" name="submit" type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <ul class="questionList">
+        <p class="listName">List of available questions:</p>
+
+        {% for i in 0..numberOfQuestions %}
+            <li>{{ questionInArray[i] }}</li>
+        {% endfor %}
+        <p></p>
+    </ul>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+</body>
+</html>

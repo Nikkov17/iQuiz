@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        {% block title %}
+            Quiz Create
+        {% endblock %}
+    </title>
+    <style>
+        {% block stylesheets %}
+        html{font-family: "Arial Black", serif ;}
+        body{background: url(background.jpg) repeat;}
+        .logo{margin-left:10px;height:250px;width: 250px;}
+        .Header{margin-top:5px;border-radius: 10px;background: url(grey-background.jpg) repeat;height:238px;}
+        ul a{text-decoration: none;color:white;}
+        .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
+        .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .MenuLi:hover{background-color: #259eff;}
+        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:50px;width:auto;}
+        .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .AdminMenuLi:hover{background-color: #259eff;}
+        .AdminFun{float:left;margin-left: 300px;margin-top: 50px;font-size:30px;color: #998e96; padding-right: 10px;}
+        .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
+        .LoginButton a{color:white;}
+        .Content{float: right; margin-right: 550px; font-size: 30px;color: #afaf67;}
+        .CreateQuiz{margin-left:100px;margin-top:30px; position: absolute}
+        .ForForm{color:#6775bc;padding-left:20px; padding-bottom: 2px; font-size: 25px}
+        .CorrectAnswer{color: lime;padding-left:20px}
+        .Answer{color: #e8e802;padding-left:20px}
+        .loginText{font-size: 15px;}
+        .Login:hover{color:#6b9311;}
+        .CreateAnswer{position: absolute; float: right}
+        {% endblock %}
+    </style>
+</head>
+<body>
+{% block body %}
+    <div class="Header">
+        <img class="logo" src="{{ asset('logo.png') }}" alt="iQuiz">
+        <ul class="Menu">
+            <li class="MenuLi"><a href="http://stilltrying/web/AdminMainPage" class="MainPage">Main Page</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Rules" class="Rules">Rules</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Ratings" class="Ratings">Ratings</a></li>
+            <li class="MenuLi"><a href="http://stilltrying/web/Contacts" class="Contacts">Contacts</a></li>
+        </ul>
+        <div class="LoginButton"><a href="http://stilltrying/web/{{ login }}" class="Login">{{ login }}</a>
+            <p class="loginText">({{ loginText }})</p>
+        </div>
+        <p class="AdminFun">Admin functions: </p>
+        <ul class="AdminMenu">
+            <li class="inActive">Create/Edit Question</li>
+            <li class="AdminMenuLi"><a href="http://stilltrying/web/QuizCreate" class="ManageUsers">Quiz Create</a></li>
+        </ul>
+    </div>
+    <div class="Content">
+        <p>
+            Create a new Question</p>
+        <br>
+        <img src="{{ asset('img.jpg') }}" alt="img" >
+        </p>
+    </div>
+    <div class="CreateQuiz">
+        <form action="" method="post" name="CreateQuestion">
+            <p class="ForForm"><label for="Question">Question:</label></p>
+            <input name="Question" type="text" size="50" maxlength="200"/>
+
+            <p class="Answer"><label for="Answer1">Answer1:</label></p>
+            <input name="Answer1" type="text" maxlength="20"/>
+
+            <p class="Answer"><label for="Answer2" >Answer2:</label></p>
+            <input name="Answer2" type="text" maxlength="20"/>
+
+            <p class="Answer"><label for="Answer3" >Answer3:</label></p>
+            <input name="Answer3" type="text" maxlength="20"/>
+
+            <p class="Answer"><label for="Answer4" >Answer4:</label></p>
+            <input name="Answer4" type="text" maxlength="20"/>
+
+            <p class="CorrectAnswer"><label for="Correct">Number of correct answer:</label></p>
+            <input name="Correct" type="text" maxlength="20"/>
+
+            <input name="submit" type="submit" value="Submit" />
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+</body>
+</html>
