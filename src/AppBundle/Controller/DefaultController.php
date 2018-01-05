@@ -455,12 +455,6 @@ class DefaultController extends Controller
             $login = 'SignOut';
             $loginText = 'you are logged in as ' . $session->get('username');
 
-            $codes = new Codes();
-            $answer = new Answers();
-            $question = new Questions();
-            $quiz = new Quiz();
-            $i = 10;
-
             $em = $this->getDoctrine()->getManager();
             $repository = $em->getRepository(Quiz::class);
 
@@ -487,14 +481,70 @@ class DefaultController extends Controller
             $post=Request::createFromGlobals();
             if($post->request->has('submit'))
             {
+                $quizNumber = $post->request->get('QuizNumber');
+                if ($quizNumber >= $RecordsNumber[0]->getId() && $quizNumber <= $RecordsNumber[$i]->getId()){
+                    $session->set('quizNumber',$quizNumber);
+                    return $this->redirectToRoute('Game');
+                }
 
-                return $this->render('Main/MainPage.html.twig');
+                return $this->redirectToRoute('Start');
             }
             else
             {
                 return $this->render('Start/Start.html.twig', array('login' => $login, 'loginText' => $loginText, 'mainPage' => $mainPage,'numberOfQuiz'=>$i,'quizInArray'=>$quizInArray));
             }
         }
+    }
+
+    /**
+     * @Route("/Game", name="Game")
+     */
+    public function GameAction(Request $request)
+    {
+        $session = $request->getSession();
+        if($session->get('username')=='')
+        {
+            return $this->redirectToRoute('SignIn');
+        }
+        else
+        {
+            $login = 'SignOut';
+            $loginText = 'you are logged in as ' . $session->get('username');
+            if($session->get('role')=='true')
+            {
+                $mainPage="AdminMainPage";
+            }
+            else
+            {
+                $mainPage="";
+            }
+        }
+
+        $number = $session->get('quizNumber');
+
+        $post=Request::createFromGlobals();
+        if($post->request->has('submit'))
+        {
+                $em = $this->getDoctrine()->getManager();
+                $repository = $em->getRepository(Quiz::class);
+                $forIdQuiz = $repository->findOneBy(array('id'=>$number));
+
+                $gameQuestions = array($forIdQuiz->getQuestion1(), $forIdQuiz->getQuestion2(), $forIdQuiz->getQuestion3(), $forIdQuiz->getQuestion4(), $forIdQuiz->getQuestion5(), $forIdQuiz->getQuestion6(), $forIdQuiz->getQuestion7(), $forIdQuiz->getQuestion8(), $forIdQuiz->getQuestion9(), $forIdQuiz->getQuestion10());
+
+                foreach ($gameQuestions as $i)
+                {
+                    echo $i;
+                }
+
+
+
+
+
+                return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
+        }
+
+        return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
+
     }
 
     public function encodePassword($pass)

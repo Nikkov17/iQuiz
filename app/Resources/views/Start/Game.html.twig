@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>
         {% block title %}
-            Start
+            Quiz Create
         {% endblock %}
     </title>
     <style>
@@ -13,18 +13,19 @@
         body{background: url(background.jpg) repeat;}
         .logo{margin-left:10px;height:250px;width: 250px;}
         .Header{margin-top:5px;border-radius: 10px;background: url(grey-background.jpg) repeat;height:238px;}
+        ul a{text-decoration: none;color:white;}
         .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
         .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
-        ul a{text-decoration: none;color:white;}
         .MenuLi:hover{background-color: #259eff;}
+        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:50px;width:auto;}
+        .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .AdminMenuLi:hover{background-color: #259eff;}
+        .AdminFun{float:left;margin-left: 300px;margin-top: 50px;font-size:30px;color: #998e96; padding-right: 10px;}
+        .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
         .LoginButton a{color:white;}
-        .Login:hover{color:#6b9311;}
-        .inActive{color:grey;display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .loginText{font-size: 15px;}
-        .quizList{list-style-type: none;color:white;border:2px solid grey;background-color: #474747;margin-top:20px;}
-        .listName{color:darkorange;font-size: 25px;}
-        .ForForm{color:white;margin-left:300px;display: inline-block;margin-top: 10px;}
+        .Login:hover{color:#6b9311;}
         {% endblock %}
     </style>
 </head>
@@ -33,33 +34,31 @@
     <div class="Header">
         <img class="logo" src="{{ asset('logo.png') }}" alt="iQuiz">
         <ul class="Menu">
-            <li class="MenuLi"><a href="http://iQuiz/web/{{ mainPage }}" class="MainPage">Main Page</a></li>
+            <li class="MenuLi"><a href="http://iQuiz/web/AdminMainPage" class="MainPage">Main Page</a></li>
             <li class="MenuLi"><a href="http://iQuiz/web/Rules" class="Rules">Rules</a></li>
-            <li class="inActive">Ratings</li>
+            <li class="MenuLi"><a href="http://iQuiz/web/Ratings" class="Ratings">Ratings</a></li>
             <li class="MenuLi"><a href="http://iQuiz/web/Contacts" class="Contacts">Contacts</a></li>
         </ul>
         <div class="LoginButton"><a href="http://iQuiz/web/{{ login }}" class="Login">{{ login }}</a>
             <p class="loginText">({{ loginText }})</p>
         </div>
+        <p class="AdminFun">Admin functions: </p>
+        <ul class="AdminMenu">
+            <li class="inActive">Create/Edit Question</li>
+            <li class="AdminMenuLi"><a href="http://iQuiz/web/QuizCreate" class="ManageUsers">Quiz Create</a></li>
+        </ul>
     </div>
 
-<form action="" method="post" name="CreateQuestion">
-            <span class="ForForm"><label for="Quiz">Enter number of Quiz you want to play:</label>
+    <form action="" method="post" name="CreateQuestion">
+            <span class="ForForm"><label for="Quiz"></label>
             <input name="QuizNumber" type="text" size="45" />
     <input class="submit" name="submit" type="submit" value="Submit" /></span>
-</form>
-
-    <ul class="quizList">
-        <p class="listName">List of available quizes:</p>
-        {% for i in 0..numberOfQuiz %}
-            <li>{{ quizInArray[i] }}</li>
-        {% endfor %}
-        <p></p>
-    </ul>
+    </form>
 
 {% endblock %}
 
 {% block javascripts %}
+
 {% endblock %}
 </body>
 </html>

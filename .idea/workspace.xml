@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49418b66-f049-46bb-be4d-cb0173827731" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Start/Game.html.twig" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
     </list>
@@ -19,45 +19,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="488" column="13" lean-forward="true" selection-start-line="488" selection-start-column="13" selection-end-line="488" selection-end-column="13" />
+            <state relative-caret-position="733">
+              <caret line="535" column="14" lean-forward="false" selection-start-line="535" selection-start-column="14" selection-end-line="535" selection-end-column="14" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
-                <element signature="e#17528#17553#1#PHP" expanded="true" />
-                <element signature="e#17638#17661#0#PHP" expanded="true" />
+                <element signature="e#16468#16476#1#PHP" expanded="true" />
+                <element signature="e#17610#17616#1#PHP" expanded="true" />
+                <element signature="e#17684#17691#1#PHP" expanded="true" />
+                <element signature="e#17776#17799#0#PHP" expanded="true" />
+                <element signature="e#18202#18210#1#PHP" expanded="true" />
+                <element signature="e#19376#19398#0#PHP" expanded="true" />
+                <element signature="e#19510#19532#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminMainPage.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPage.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Start.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig">
+      <file leaf-file-name="Game.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Game.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1128">
-              <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+              <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -100,9 +85,10 @@
         <option value="$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Start/Game.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -193,12 +179,6 @@
               <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -214,7 +194,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="QuestionCreate" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
@@ -295,18 +275,18 @@
       <workItem from="1514893639531" duration="16902000" />
       <workItem from="1514979723189" duration="23513000" />
       <workItem from="1515086447493" duration="21251000" />
-      <workItem from="1515148235738" duration="2999000" />
+      <workItem from="1515148235738" duration="14461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122052000" />
+    <option name="totallyTimeSpent" value="133514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="141" y="-16" width="3715" height="2192" extended-state="6" />
+    <frame x="212" y="-16" width="3644" height="2192" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17718716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951587" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -339,22 +319,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#17528#17553#1#PHP" expanded="true" />
-            <element signature="e#17638#17661#0#PHP" expanded="true" />
+            <element signature="e#16468#16476#1#PHP" expanded="true" />
+            <element signature="e#17610#17616#1#PHP" expanded="true" />
+            <element signature="e#17684#17691#1#PHP" expanded="true" />
+            <element signature="e#17776#17799#0#PHP" expanded="true" />
+            <element signature="e#18202#18210#1#PHP" expanded="true" />
+            <element signature="e#19376#19398#0#PHP" expanded="true" />
+            <element signature="e#19510#19532#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -403,8 +380,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#17528#17553#1#PHP" expanded="true" />
-            <element signature="e#17638#17661#0#PHP" expanded="true" />
+            <element signature="e#16468#16476#1#PHP" expanded="true" />
+            <element signature="e#17610#17616#1#PHP" expanded="true" />
+            <element signature="e#17684#17691#1#PHP" expanded="true" />
+            <element signature="e#17776#17799#0#PHP" expanded="true" />
+            <element signature="e#18202#18210#1#PHP" expanded="true" />
+            <element signature="e#19376#19398#0#PHP" expanded="true" />
+            <element signature="e#19510#19532#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -453,8 +435,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#17528#17553#1#PHP" expanded="true" />
-            <element signature="e#17638#17661#0#PHP" expanded="true" />
+            <element signature="e#16468#16476#1#PHP" expanded="true" />
+            <element signature="e#17610#17616#1#PHP" expanded="true" />
+            <element signature="e#17684#17691#1#PHP" expanded="true" />
+            <element signature="e#17776#17799#0#PHP" expanded="true" />
+            <element signature="e#18202#18210#1#PHP" expanded="true" />
+            <element signature="e#19376#19398#0#PHP" expanded="true" />
+            <element signature="e#19510#19532#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,8 +452,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#17528#17553#1#PHP" expanded="true" />
-            <element signature="e#17638#17661#0#PHP" expanded="true" />
+            <element signature="e#16468#16476#1#PHP" expanded="true" />
+            <element signature="e#17610#17616#1#PHP" expanded="true" />
+            <element signature="e#17684#17691#1#PHP" expanded="true" />
+            <element signature="e#17776#17799#0#PHP" expanded="true" />
+            <element signature="e#18202#18210#1#PHP" expanded="true" />
+            <element signature="e#19376#19398#0#PHP" expanded="true" />
+            <element signature="e#19510#19532#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -560,14 +552,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate.html.twig/QuizCreate.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -656,14 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -680,34 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="488" column="13" lean-forward="true" selection-start-line="488" selection-start-column="13" selection-end-line="488" selection-end-column="13" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#17528#17553#1#PHP" expanded="true" />
-            <element signature="e#17638#17661#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="708">
@@ -718,9 +666,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="800">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="94" column="15" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="94" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1788">
+          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Game.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="535" column="14" lean-forward="false" selection-start-line="535" selection-start-column="14" selection-end-line="535" selection-end-column="14" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+            <element signature="e#16468#16476#1#PHP" expanded="true" />
+            <element signature="e#17610#17616#1#PHP" expanded="true" />
+            <element signature="e#17684#17691#1#PHP" expanded="true" />
+            <element signature="e#17776#17799#0#PHP" expanded="true" />
+            <element signature="e#18202#18210#1#PHP" expanded="true" />
+            <element signature="e#19376#19398#0#PHP" expanded="true" />
+            <element signature="e#19510#19532#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
