@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49418b66-f049-46bb-be4d-cb0173827731" name="Default" comment="" />
+    <list default="true" id="49418b66-f049-46bb-be4d-cb0173827731" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Form/SignIn.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Form/SignIn.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
+      <change beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,52 +30,29 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="3000">
+              <caret line="309" column="53" lean-forward="true" selection-start-line="309" selection-start-column="53" selection-end-line="309" selection-end-column="53" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
-                <element signature="e#9283#9299#1#PHP" expanded="true" />
-                <element signature="e#9366#9407#0#PHP" expanded="true" />
-                <element signature="e#12405#12420#1#PHP" expanded="true" />
-                <element signature="e#12537#12570#0#PHP" expanded="true" />
-                <element signature="e#15604#15619#1#PHP" expanded="true" />
-                <element signature="e#15899#15922#1#PHP" expanded="true" />
-                <element signature="e#16468#16476#1#PHP" expanded="true" />
-                <element signature="e#17300#17323#0#PHP" expanded="true" />
-                <element signature="e#17710#17733#0#PHP" expanded="true" />
-                <element signature="e#17885#17910#1#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignIn.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Form/SignIn.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUp.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>D:\work-programming\php-projects\iQuiz</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/Login/Admin.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Login/SignIn.html.twig" />
@@ -70,9 +60,6 @@
         <option value="$PROJECT_DIR$/web/.htaccess" />
         <option value="$PROJECT_DIR$/app/Resources/views/Form/DoublePassword.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Question.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Users.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
@@ -80,13 +67,17 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Questions.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Answers.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Quiz.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Form/SignIn.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -166,63 +157,71 @@
         <subPane>
           <expand>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="QuestionCreate" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="QuizCreate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iQuiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iQuiz" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="StillTrying" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StillTrying" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cache" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -232,7 +231,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iQuiz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -272,14 +271,16 @@
       <workItem from="1514893639531" duration="16902000" />
       <workItem from="1514979723189" duration="23513000" />
       <workItem from="1515086447493" duration="21251000" />
+      <workItem from="1515148235738" duration="2257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119053000" />
+    <option name="totallyTimeSpent" value="121310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="141" y="-16" width="3715" height="2192" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -288,7 +289,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -314,13 +315,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -335,16 +329,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#9283#9299#1#PHP" expanded="true" />
-            <element signature="e#9366#9407#0#PHP" expanded="true" />
-            <element signature="e#12405#12420#1#PHP" expanded="true" />
-            <element signature="e#12537#12570#0#PHP" expanded="true" />
-            <element signature="e#15604#15619#1#PHP" expanded="true" />
-            <element signature="e#15899#15922#1#PHP" expanded="true" />
-            <element signature="e#16468#16476#1#PHP" expanded="true" />
-            <element signature="e#17300#17323#0#PHP" expanded="true" />
-            <element signature="e#17710#17733#0#PHP" expanded="true" />
-            <element signature="e#17885#17910#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -393,16 +377,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#9283#9299#1#PHP" expanded="true" />
-            <element signature="e#9366#9407#0#PHP" expanded="true" />
-            <element signature="e#12405#12420#1#PHP" expanded="true" />
-            <element signature="e#12537#12570#0#PHP" expanded="true" />
-            <element signature="e#15604#15619#1#PHP" expanded="true" />
-            <element signature="e#15899#15922#1#PHP" expanded="true" />
-            <element signature="e#16468#16476#1#PHP" expanded="true" />
-            <element signature="e#17300#17323#0#PHP" expanded="true" />
-            <element signature="e#17710#17733#0#PHP" expanded="true" />
-            <element signature="e#17885#17910#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -451,16 +425,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#9283#9299#1#PHP" expanded="true" />
-            <element signature="e#9366#9407#0#PHP" expanded="true" />
-            <element signature="e#12405#12420#1#PHP" expanded="true" />
-            <element signature="e#12537#12570#0#PHP" expanded="true" />
-            <element signature="e#15604#15619#1#PHP" expanded="true" />
-            <element signature="e#15899#15922#1#PHP" expanded="true" />
-            <element signature="e#16468#16476#1#PHP" expanded="true" />
-            <element signature="e#17300#17323#0#PHP" expanded="true" />
-            <element signature="e#17710#17733#0#PHP" expanded="true" />
-            <element signature="e#17885#17910#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,16 +435,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#9283#9299#1#PHP" expanded="true" />
-            <element signature="e#9366#9407#0#PHP" expanded="true" />
-            <element signature="e#12405#12420#1#PHP" expanded="true" />
-            <element signature="e#12537#12570#0#PHP" expanded="true" />
-            <element signature="e#15604#15619#1#PHP" expanded="true" />
-            <element signature="e#15899#15922#1#PHP" expanded="true" />
-            <element signature="e#16468#16476#1#PHP" expanded="true" />
-            <element signature="e#17300#17323#0#PHP" expanded="true" />
-            <element signature="e#17710#17733#0#PHP" expanded="true" />
-            <element signature="e#17885#17910#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,13 +454,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -533,13 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -572,32 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -609,70 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Codes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate.html.twig/QuizCreate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="54" column="78" lean-forward="false" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate.html.twig/QuizCreate.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Quiz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3600">
@@ -681,62 +536,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Questions.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Contacts/Contacts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="248">
+          <caret line="48" column="54" lean-forward="false" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/AdminMainPage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        <state relative-caret-position="1240">
+          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Main/MainPage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="91" column="31" lean-forward="true" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+        <state relative-caret-position="1128">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Ratings/Ratings.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="1168">
+          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Rules/Rules.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Start/Start.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Form/SignIn.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="1328">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Form/SignUp.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Codes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuestionCreate/QuestionCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/QuizCreate/QuizCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="102" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Answers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="3000">
+          <caret line="309" column="53" lean-forward="true" selection-start-line="309" selection-start-column="53" selection-end-line="309" selection-end-column="53" />
           <folding>
             <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#9283#9299#1#PHP" expanded="true" />
-            <element signature="e#9366#9407#0#PHP" expanded="true" />
-            <element signature="e#12405#12420#1#PHP" expanded="true" />
-            <element signature="e#12537#12570#0#PHP" expanded="true" />
-            <element signature="e#15604#15619#1#PHP" expanded="true" />
-            <element signature="e#15899#15922#1#PHP" expanded="true" />
-            <element signature="e#16468#16476#1#PHP" expanded="true" />
-            <element signature="e#17300#17323#0#PHP" expanded="true" />
-            <element signature="e#17710#17733#0#PHP" expanded="true" />
-            <element signature="e#17885#17910#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
