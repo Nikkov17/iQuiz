@@ -463,42 +463,38 @@ class DefaultController extends Controller
 
             $em = $this->getDoctrine()->getManager();
             $repository = $em->getRepository(Quiz::class);
-            $events = $repository->findAll();
-            echo $events;
+
+            $RecordsNumber = $repository->findAll();
+            $i=0;
+            $quizInArray = array();
+            foreach($RecordsNumber as $a)
+            {
+                $quizInArray[$i] = $a->getId().')'.$a->getQuiz();
+                $i++;
+            }
+            $i--;
 
             if($session->get('role')=='true')
             {
                 $mainPage="AdminMainPage";
-
-                $post=Request::createFromGlobals();
-                if($post->request->has('submit'))
-                {
-
-
-                }
-                else
-                {
-                    return $this->render('Start/Start.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
-                }
-
             }
             else
             {
                 $mainPage="";
-
-                $post=Request::createFromGlobals();
-                if($post->request->has('submit'))
-                {
+            }
 
 
-                }
-                else
-                {
-                    return $this->render('Start/Start.html.twig', array('login' => $login, 'loginText' => $loginText, 'mainPage' => $mainPage));
-                }
+            $post=Request::createFromGlobals();
+            if($post->request->has('submit'))
+            {
+
+                return $this->render('Main/MainPage.html.twig');
+            }
+            else
+            {
+                return $this->render('Start/Start.html.twig', array('login' => $login, 'loginText' => $loginText, 'mainPage' => $mainPage,'numberOfQuiz'=>$i,'quizInArray'=>$quizInArray));
             }
         }
-        return $this->render('Main/MainPage.html.twig');
     }
 
     public function encodePassword($pass)
