@@ -26,6 +26,8 @@
         .LoginButton a{color:white;}
         .loginText{font-size: 15px;}
         .Login:hover{color:#6b9311;}
+        .QuestionAndAnswers{color:sandybrown;}
+        .Answers{list-style-type: none;font-size: 20px;}
         {% endblock %}
     </style>
 </head>
@@ -54,7 +56,15 @@
             <input name="QuizNumber" type="text" size="45" />
     <input class="submit" name="submit" type="submit" value="Submit" /></span>
     </form>
-
+<div class="QuestionAndAnswers">
+    <h1 class="Questions">{{ CurrentQuestion }}</h1>
+    <ul class="Answers">
+        <li>1){{ CurrentAnswersArray[0] }}</li>
+        <li>2){{ CurrentAnswersArray[1] }}</li>
+        <li>3){{ CurrentAnswersArray[2] }}</li>
+        <li>4){{ CurrentAnswersArray[3] }}</li>
+    </ul>
+</div>
 {% endblock %}
 
 {% block javascripts %}

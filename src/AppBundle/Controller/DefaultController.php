@@ -521,30 +521,65 @@ class DefaultController extends Controller
         }
 
         $number = $session->get('quizNumber');
+        $em = $this->getDoctrine()->getManager();
+        $QuizRepository = $em->getRepository(Quiz::class);
+        $forIdQuiz = $QuizRepository->findOneBy(array('id'=>$number));
+        $QuestionsArray = array($forIdQuiz->getQuestion1(), $forIdQuiz->getQuestion2(), $forIdQuiz->getQuestion3(), $forIdQuiz->getQuestion4(), $forIdQuiz->getQuestion5(), $forIdQuiz->getQuestion6(), $forIdQuiz->getQuestion7(), $forIdQuiz->getQuestion8(), $forIdQuiz->getQuestion9(), $forIdQuiz->getQuestion10());
 
-        $post=Request::createFromGlobals();
-        if($post->request->has('submit'))
+//        foreach ($QuestionsArray as $i)
+//        {
+//            $QuestionRepository = $em->getRepository(Questions::class);
+//            $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$i));
+//            echo $i.')'.$CurrentQuestion->getQuestion().':';
+//
+//            $CodesRepository = $em->getRepository(Codes::class);
+//            $PresentCode = $CodesRepository->findBy(array('question_id'=>$i));
+//            $GameAnswersIdArray = array($PresentCode[0]->getAnswerId(),$PresentCode[1]->getAnswerId(),$PresentCode[2]->getAnswerId(),$PresentCode[3]->getAnswerId());
+//
+//            $AnswersRepository = $em->getRepository(Answers::class);
+//
+//            foreach ($GameAnswersIdArray as $item)
+//            {
+//                $CurrentAnswer = $AnswersRepository->findOneBy(array('id'=>$item));
+//                echo $item.')'.$CurrentAnswer->getAnswer().',';
+//            }
+//            echo '<br>';
+//        }
+
+
+        for ($j = 0;$j<10;)
         {
-                $em = $this->getDoctrine()->getManager();
-                $repository = $em->getRepository(Quiz::class);
-                $forIdQuiz = $repository->findOneBy(array('id'=>$number));
+            $post=Request::createFromGlobals();
 
-                $gameQuestions = array($forIdQuiz->getQuestion1(), $forIdQuiz->getQuestion2(), $forIdQuiz->getQuestion3(), $forIdQuiz->getQuestion4(), $forIdQuiz->getQuestion5(), $forIdQuiz->getQuestion6(), $forIdQuiz->getQuestion7(), $forIdQuiz->getQuestion8(), $forIdQuiz->getQuestion9(), $forIdQuiz->getQuestion10());
 
-                foreach ($gameQuestions as $i)
+            if($post->request->has('submit'))
+            {
+                $QuestionRepository = $em->getRepository(Questions::class);
+                $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$QuestionsArray[$j]));
+//                        echo $QuestionsArray[$j].')'.$CurrentQuestion->getQuestion().':';
+
+                $CodesRepository = $em->getRepository(Codes::class);
+                $PresentCode = $CodesRepository->findBy(array('question_id'=>$QuestionsArray[$j]));
+                $GameAnswersIdArray = array($PresentCode[0]->getAnswerId(),$PresentCode[1]->getAnswerId(),$PresentCode[2]->getAnswerId(),$PresentCode[3]->getAnswerId());
+
+                $AnswersRepository = $em->getRepository(Answers::class);
+                $CurrentAnswersArray = array();
+                $l=0;
+                foreach ($GameAnswersIdArray as $item)
                 {
-                    echo $i;
+                    $CurrentAnswer = $AnswersRepository->findOneBy(array('id'=>$item));
+                    $CurrentAnswersArray[$l] = $CurrentAnswer->getAnswer();
+//                        echo $item.')'.$CurrentAnswer->getAnswer().',';
+                        $l++;
                 }
 
-
-
-
-
-                return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
+                $j++;
+                return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage,'CurrentQuestion'=>$CurrentQuestion->getQuestion(),'CurrentAnswersArray'=>$CurrentAnswersArray));
+            }
+        return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
         }
 
-        return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
-
+        return $this->render('Main/MainPage.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
     }
 
     public function encodePassword($pass)
