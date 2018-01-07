@@ -533,9 +533,9 @@ class DefaultController extends Controller
         $post=Request::createFromGlobals();
         $answerNumber =  $post->request->get('AnswerNumber');
 
-        if($post->request->has('submit') )
+        if($post->request->has('submit') && $answerNumber!='')
         {
-            if($answerNumber<5 && $answerNumber>0)
+            if($answerNumber<5 && $answerNumber>0 )
             {
                 $AnswersRep = $em->getRepository(Answers::class);
                 $QuestionRep = $em->getRepository(Questions::class);
@@ -549,15 +549,17 @@ class DefaultController extends Controller
                 if($Answer->getRightAns()=='true')
                 {
                     $session->set('RightAnswers',$session->get('RightAnswers')+1);
-                    echo $session->get('RightAnswers');
                 }
 
                 if (($session->get('nextNumber'))==11)
                 {
-                    echo $session->get('RightAnswers').'/10';
-                    return $this->redirectToRoute('Ratings');
+                    $text = 'Congratulations!!!! Your score is: ';
+                    $end = '/10';
+                    return $this->render('Ratings/Ratings.html.twig',array('login' => $login, 'loginText' => $loginText, 'mainPage' => $mainPage,'text'=>$text,'RightAnswers'=>$session->get('RightAnswers'),'end'=>$end));
                 }
-            }else{
+            }
+            else
+            {
                 $session->set('message','Please, enter something between 1 and 4...');
             }
         }
