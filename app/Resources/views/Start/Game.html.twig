@@ -24,6 +24,7 @@
         .QuestionAndAnswers{color:sandybrown;}
         .Answers{list-style-type: none;font-size: 20px;}
         .form {margin-left:40px;}
+        .message{color:red;font-size:30px;margin-top:20px;}
         {% endblock %}
     </style>
 </head>
@@ -58,6 +59,10 @@
             <input name="AnswerNumber" type="text" size="1" />
     <input class="submit" name="submit" type="submit" value="Submit" /></span>
 </form>
+
+    <div class="message">
+        {{ message }}
+    </div>
 {% endblock %}
 
 {% block javascripts %}

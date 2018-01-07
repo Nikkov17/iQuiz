@@ -505,6 +505,7 @@ class DefaultController extends Controller
     public function GameAction(Request $request)
     {
         $session = $request->getSession();
+        $session->set('message','');
         if($session->get('username')=='')
         {
             return $this->redirectToRoute('SignIn');
@@ -532,29 +533,35 @@ class DefaultController extends Controller
         $post=Request::createFromGlobals();
         $answerNumber =  $post->request->get('AnswerNumber');
 
-        if($post->request->has('submit'))
+        if($post->request->has('submit') )
         {
-            $AnswersRep = $em->getRepository(Answers::class);
-            $QuestionRep = $em->getRepository(Questions::class);
-            $Question = $QuestionRep->findOneBy(array('id'=>$QuestionsArray[$session->get('currentNumber')]));
-            $Answer = $AnswersRep->findOneBy(array('id'=>($Question->getId()*4-(4-$answerNumber))));
-
-            $session->set('currentNumber',($session->get('nextNumber')));
-            $session->set('nextNumber',$session->get('currentNumber')+1);
-
-
-            if($Answer->getRightAns()=='true')
+            if($answerNumber<5 && $answerNumber>0)
             {
-                $session->set('RightAnswers',$session->get('RightAnswers')+1);
-                echo $session->get('RightAnswers');
-            }
+                $AnswersRep = $em->getRepository(Answers::class);
+                $QuestionRep = $em->getRepository(Questions::class);
+                $Question = $QuestionRep->findOneBy(array('id'=>$QuestionsArray[$session->get('currentNumber')]));
+                $Answer = $AnswersRep->findOneBy(array('id'=>($Question->getId()*4-(4-$answerNumber))));
 
-            if (($session->get('nextNumber'))==11)
-            {
-                echo $session->get('RightAnswers').'/10';
-                return $this->redirectToRoute('Ratings');
+                $session->set('currentNumber',($session->get('nextNumber')));
+                $session->set('nextNumber',$session->get('currentNumber')+1);
+
+
+                if($Answer->getRightAns()=='true')
+                {
+                    $session->set('RightAnswers',$session->get('RightAnswers')+1);
+                    echo $session->get('RightAnswers');
+                }
+
+                if (($session->get('nextNumber'))==11)
+                {
+                    echo $session->get('RightAnswers').'/10';
+                    return $this->redirectToRoute('Ratings');
+                }
+            }else{
+                $session->set('message','Please, enter something between 1 and 4...');
             }
         }
+
 
             $QuestionRepository = $em->getRepository(Questions::class);
             $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$QuestionsArray[$session->get('currentNumber')]));
@@ -574,7 +581,7 @@ class DefaultController extends Controller
             }
 
 
-            return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage,'CurrentQuestion'=>$CurrentQuestion->getQuestion(),'CurrentAnswersArray'=>$CurrentAnswersArray));
+            return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage,'CurrentQuestion'=>$CurrentQuestion->getQuestion(),'CurrentAnswersArray'=>$CurrentAnswersArray,'message'=>$session->get('message')));
 
         }
 
