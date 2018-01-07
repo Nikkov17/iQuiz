@@ -484,6 +484,9 @@ class DefaultController extends Controller
                 $quizNumber = $post->request->get('QuizNumber');
                 if ($quizNumber >= $RecordsNumber[0]->getId() && $quizNumber <= $RecordsNumber[$i]->getId()){
                     $session->set('quizNumber',$quizNumber);
+                    $session->set('currentNumber',0);
+                    $session->set('nextNumber',1);
+                    $session->set('RightAnswers',0);
                     return $this->redirectToRoute('Game');
                 }
 
@@ -526,61 +529,54 @@ class DefaultController extends Controller
         $forIdQuiz = $QuizRepository->findOneBy(array('id'=>$number));
         $QuestionsArray = array($forIdQuiz->getQuestion1(), $forIdQuiz->getQuestion2(), $forIdQuiz->getQuestion3(), $forIdQuiz->getQuestion4(), $forIdQuiz->getQuestion5(), $forIdQuiz->getQuestion6(), $forIdQuiz->getQuestion7(), $forIdQuiz->getQuestion8(), $forIdQuiz->getQuestion9(), $forIdQuiz->getQuestion10());
 
-//        foreach ($QuestionsArray as $i)
-//        {
-//            $QuestionRepository = $em->getRepository(Questions::class);
-//            $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$i));
-//            echo $i.')'.$CurrentQuestion->getQuestion().':';
-//
-//            $CodesRepository = $em->getRepository(Codes::class);
-//            $PresentCode = $CodesRepository->findBy(array('question_id'=>$i));
-//            $GameAnswersIdArray = array($PresentCode[0]->getAnswerId(),$PresentCode[1]->getAnswerId(),$PresentCode[2]->getAnswerId(),$PresentCode[3]->getAnswerId());
-//
-//            $AnswersRepository = $em->getRepository(Answers::class);
-//
-//            foreach ($GameAnswersIdArray as $item)
-//            {
-//                $CurrentAnswer = $AnswersRepository->findOneBy(array('id'=>$item));
-//                echo $item.')'.$CurrentAnswer->getAnswer().',';
-//            }
-//            echo '<br>';
-//        }
+        $post=Request::createFromGlobals();
+        $answerNumber =  $post->request->get('AnswerNumber');
 
-
-        for ($j = 0;$j<10;)
+        if($post->request->has('submit'))
         {
-            $post=Request::createFromGlobals();
+            $AnswersRep = $em->getRepository(Answers::class);
+            $QuestionRep = $em->getRepository(Questions::class);
+            $Question = $QuestionRep->findOneBy(array('id'=>$QuestionsArray[$session->get('currentNumber')]));
+            $Answer = $AnswersRep->findOneBy(array('id'=>($Question->getId()*4-(4-$answerNumber))));
+
+            $session->set('currentNumber',($session->get('nextNumber')));
+            $session->set('nextNumber',$session->get('currentNumber')+1);
 
 
-            if($post->request->has('submit'))
+            if($Answer->getRightAns()=='true')
             {
-                $QuestionRepository = $em->getRepository(Questions::class);
-                $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$QuestionsArray[$j]));
-//                        echo $QuestionsArray[$j].')'.$CurrentQuestion->getQuestion().':';
-
-                $CodesRepository = $em->getRepository(Codes::class);
-                $PresentCode = $CodesRepository->findBy(array('question_id'=>$QuestionsArray[$j]));
-                $GameAnswersIdArray = array($PresentCode[0]->getAnswerId(),$PresentCode[1]->getAnswerId(),$PresentCode[2]->getAnswerId(),$PresentCode[3]->getAnswerId());
-
-                $AnswersRepository = $em->getRepository(Answers::class);
-                $CurrentAnswersArray = array();
-                $l=0;
-                foreach ($GameAnswersIdArray as $item)
-                {
-                    $CurrentAnswer = $AnswersRepository->findOneBy(array('id'=>$item));
-                    $CurrentAnswersArray[$l] = $CurrentAnswer->getAnswer();
-//                        echo $item.')'.$CurrentAnswer->getAnswer().',';
-                        $l++;
-                }
-
-                $j++;
-                return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage,'CurrentQuestion'=>$CurrentQuestion->getQuestion(),'CurrentAnswersArray'=>$CurrentAnswersArray));
+                $session->set('RightAnswers',$session->get('RightAnswers')+1);
+                echo $session->get('RightAnswers');
             }
-        return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
+
+            if (($session->get('nextNumber'))==11)
+            {
+                echo $session->get('RightAnswers').'/10';
+                return $this->redirectToRoute('Ratings');
+            }
         }
 
-        return $this->render('Main/MainPage.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
-    }
+            $QuestionRepository = $em->getRepository(Questions::class);
+            $CurrentQuestion = $QuestionRepository->findOneBy(array('id'=>$QuestionsArray[$session->get('currentNumber')]));
+
+            $CodesRepository = $em->getRepository(Codes::class);
+            $PresentCode = $CodesRepository->findBy(array('question_id'=>$QuestionsArray[$session->get('currentNumber')]));
+            $GameAnswersIdArray = array($PresentCode[0]->getAnswerId(),$PresentCode[1]->getAnswerId(),$PresentCode[2]->getAnswerId(),$PresentCode[3]->getAnswerId());
+
+            $AnswersRepository = $em->getRepository(Answers::class);
+            $CurrentAnswersArray = array();
+            $l=0;
+            foreach ($GameAnswersIdArray as $item)
+            {
+                $CurrentAnswer = $AnswersRepository->findOneBy(array('id'=>$item));
+                $CurrentAnswersArray[$l] = $CurrentAnswer->getAnswer();
+                $l++;
+            }
+
+
+            return $this->render('Start/Game.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage,'CurrentQuestion'=>$CurrentQuestion->getQuestion(),'CurrentAnswersArray'=>$CurrentAnswersArray));
+
+        }
 
     public function encodePassword($pass)
     {

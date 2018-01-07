@@ -17,17 +17,13 @@
         .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
         .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .MenuLi:hover{background-color: #259eff;}
-        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:50px;width:auto;}
-        .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
-        .AdminMenuLi:hover{background-color: #259eff;}
-        .AdminFun{float:left;margin-left: 300px;margin-top: 50px;font-size:30px;color: #998e96; padding-right: 10px;}
-        .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
         .LoginButton a{color:white;}
         .loginText{font-size: 15px;}
         .Login:hover{color:#6b9311;}
         .QuestionAndAnswers{color:sandybrown;}
         .Answers{list-style-type: none;font-size: 20px;}
+        .form {margin-left:40px;}
         {% endblock %}
     </style>
 </head>
@@ -44,18 +40,10 @@
         <div class="LoginButton"><a href="http://iQuiz/web/{{ login }}" class="Login">{{ login }}</a>
             <p class="loginText">({{ loginText }})</p>
         </div>
-        <p class="AdminFun">Admin functions: </p>
-        <ul class="AdminMenu">
-            <li class="inActive">Create/Edit Question</li>
-            <li class="AdminMenuLi"><a href="http://iQuiz/web/QuizCreate" class="ManageUsers">Quiz Create</a></li>
-        </ul>
+
     </div>
 
-    <form action="" method="post" name="CreateQuestion">
-            <span class="ForForm"><label for="Quiz"></label>
-            <input name="QuizNumber" type="text" size="45" />
-    <input class="submit" name="submit" type="submit" value="Submit" /></span>
-    </form>
+
 <div class="QuestionAndAnswers">
     <h1 class="Questions">{{ CurrentQuestion }}</h1>
     <ul class="Answers">
@@ -65,6 +53,11 @@
         <li>4){{ CurrentAnswersArray[3] }}</li>
     </ul>
 </div>
+    <form class="form" action="" method="post" name="CreateQuestion">
+            <span class="ForForm"><label for="Quiz"></label>
+            <input name="AnswerNumber" type="text" size="1" />
+    <input class="submit" name="submit" type="submit" value="Submit" /></span>
+</form>
 {% endblock %}
 
 {% block javascripts %}
