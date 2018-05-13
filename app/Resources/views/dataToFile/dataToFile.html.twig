@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>
         {% block title %}
-            Main Page
+            Admin Main Page
         {% endblock %}
     </title>
     <style>
@@ -13,13 +13,16 @@
         body{background: url(background.jpg) repeat;}
         .logo{margin-left:10px;height:250px;width: 250px;}
         .Header{margin-top:5px;border-radius: 10px;background: url(grey-background.jpg) repeat;height:238px;}
+        ul a{text-decoration: none;color:white;}
         .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
         .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
-        ul a{text-decoration: none;color:white;}
         .MenuLi:hover{background-color: #259eff;}
+        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:10px;width:auto;}
+        .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .AdminMenuLi:hover{background-color: #259eff;}
+        .AdminFun{float:left;margin-left: 300px;margin-top: 10px;font-size:30px;color: #998e96; padding-right: 10px;}
         .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
         .LoginButton a{color:white;}
-        .Login:hover{color:#6b9311;}
         .Content{margin-left:60px;margin-right:500px;color:white;font-family: "Calibri Light", serif}
         .Properties{position: absolute;width: fit-content;top:250px;right:100px;color:white;border:1px solid white;padding:10px;}
         .listQuizLi{list-style-type:circle;font-size:20px;}
@@ -27,8 +30,13 @@
         .startGame{float:right;margin-top:230px;margin-right:180px;background-color: #6b9311;width: 200px;height:200px;border-radius: 50%; }
         .startGame:hover{background-color: lawngreen;cursor: pointer}
         .ButtVic{margin-left:18px;margin-top:55px;text-decoration: none;font-size:60px;color:white;}
-        .inActive{color:grey;display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .loginText{font-size: 15px;}
+        .Login:hover{color:#6b9311;}
+        .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .dataToFile{ border: 0; font-size: 10px; padding: 0; margin: 0; color: grey;}
+        .dataToFile:hover{ color: white;}
+        .questionList{list-style-type: none;color:white;border:2px solid grey;background-color: #474747;}
+        .listName{color:darkorange;font-size: 25px;}
         {% endblock %}
     </style>
 </head>
@@ -37,7 +45,7 @@
     <div class="Header">
         <img class="logo" src="{{ asset('logo.png') }}" alt="iQuiz">
         <ul class="Menu">
-            <li class="inActive">Main Page</li>
+            <li class="MenuLi"><a href="http://iQuiz/web/AdminMainPage" class="MainPage">Main Page</a></li>
             <li class="MenuLi"><a href="http://iQuiz/web/Rules" class="Rules">Rules</a></li>
             <li class="MenuLi"><a href="http://iQuiz/web/Ratings" class="Ratings">Ratings</a></li>
             <li class="MenuLi"><a href="http://iQuiz/web/Contacts" class="Contacts">Contacts</a></li>
@@ -45,31 +53,25 @@
         <div class="LoginButton"><a href="http://iQuiz/web/{{ login }}" class="Login">{{ login }}</a>
             <p class="loginText">({{ loginText }})</p>
         </div>
-    </div>
-    <div class="Content">
-        <p>
-            УРАААА!!! Это случилось! Самая крутая, современная и красивая викторина iQuiz открывается!
-            Я(Николай) работал не покладая рук, не спал ночами, не спал даже днями, и вот наконец сделал это.
-            В моей викторине столько функционала, сколько вам и не снилось...
-        <P>ДОБРО ПОЖАЛОВАТЬ, Я ВАМ ОЧЕНЬ РАД!</P>
-        </p>
-    </div>
-    <div class="Properties">
-        <p class="PropertiesName">iQuiz викторина:</p>
-        <ul class="listQuiz">
-            <li class="listQuizLi">Яркая</li>
-            <li class="listQuizLi">Интересная</li>
-            <li class="listQuizLi">Увлекательная</li>
-            <li class="listQuizLi">Инновационная</li>
-            <li class="listQuizLi">Современная</li>
-            <li class="listQuizLi">Интеллектуальная</li>
+        <p class="AdminFun">Admin functions: </p>
+        <ul class="AdminMenu">
+            <li class="AdminMenuLi"><a href="http://iQuiz/web/QuestionCreate" class="Create/Edit">Create/Edit Question</a></li>
+            <li class="AdminMenuLi"><a href="http://iQuiz/web/QuizCreate" class="QuizCreate">Quiz Create</a></li>
+            <li class="AdminMenuLi dataToFile"><a href="http://iQuiz/web/dataToFile" class="dataToFile">output the data to file</a></li>
         </ul>
     </div>
-    <a href="http://iQuiz/web/Start">
-        <div class="startGame" >
-            <p class="ButtVic"> Start</p>
-        </div>
-    </a>
+
+    <ul class="questionList">
+        <p class="listName">List of available questions:</p>
+        {% for i in 0..numberOfQuestions %}
+            <li>{{ questionInArray[i] }}</li>
+        {% endfor %}
+        <p></p>
+    </ul>
+    <form action="" method="post" name="CreateQuestion">
+        <input class="submit" name="submit" type="submit" value="output" />
+    </form>
+
 {% endblock %}
 
 {% block javascripts %}

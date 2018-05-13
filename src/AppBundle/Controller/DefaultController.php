@@ -587,6 +587,80 @@ class DefaultController extends Controller
 
         }
 
+    /**
+     * @Route("/dataToFile", name="dataToFile")
+     */
+    public function dataToFileAction(Request $request)
+    {
+        $session = $request->getSession();
+        if($session->get('username')=='')
+        {
+            $login = 'SignUp';
+            $loginText = 'or SignIn';
+//            return $this->render('Main/AdminMainPage.html.twig',array('login'=>$login,'loginText'=>$loginText));
+            return $this->redirectToRoute('homepage');
+        }
+        else
+        {
+            $login = 'SignOut';
+            $loginText = 'you are logged in as ' . $session->get('username');
+            if($session->get('role')=='true')
+            {
+                $mainPage="AdminMainPage";
+
+                $em = $this->getDoctrine()->getManager();
+                $repository = $em->getRepository(Questions::class);
+
+                $RecordsNumber = $repository->findAll();
+                $i=0;
+                $questionInArray = array();
+                foreach($RecordsNumber as $a)
+                {
+                    $questionInArray[$i] = $a->getId().')'.$a->getQuestion();
+                    $i++;
+                }
+                $i--;
+
+
+                $post=Request::createFromGlobals();
+                if($post->request->has('submit'))
+                {
+                    $file = "questions.txt";
+                    if (file_exists($file)) {
+                        $fp = fopen($file, "w+");
+                        foreach($questionInArray as $curQuestion)
+                        {
+                            fwrite($fp, $curQuestion);
+                            fwrite($fp, "\r\n");
+                        }
+                        fclose($fp);
+                    } else {
+                        $fp = fopen($file, "w+");
+                        foreach($questionInArray as $curQuestion)
+                        {
+                            fwrite($fp, $curQuestion);
+                            fwrite($fp, "\r\n");
+                        }
+                        fclose($fp);
+                    }
+                    return $this->redirectToRoute('AdminMainPage');
+                }
+
+
+                return $this->render('dataToFile/dataToFile.html.twig',array('login'=>$login,'loginText'=>$loginText,'numberOfQuestions'=>$i,'questionInArray'=>$questionInArray));
+//                return $this->redirectToRoute('AdminMainPage');
+
+            }
+            else
+            {
+                $mainPage="";
+//                return $this->render('Main/MainPage.html.twig',array('login'=>$login,'loginText'=>$loginText,'mainPage'=>$mainPage));
+                return $this->redirectToRoute('homepage');
+
+            }
+        }
+    }
+
     public function encodePassword($pass)
     {
         return hash('sha256', $pass);

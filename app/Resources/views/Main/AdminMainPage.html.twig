@@ -17,22 +17,24 @@
         .Menu{margin-left:320px;margin-right: 150px;margin-top:-200px;width:auto;}
         .MenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .MenuLi:hover{background-color: #259eff;}
-        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:50px;width:auto;}
+        .AdminMenu{margin-left:320px;margin-right: 150px;margin-top:10px;width:auto;}
         .AdminMenuLi{display:inline;border:1px solid white;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
         .AdminMenuLi:hover{background-color: #259eff;}
-        .AdminFun{float:left;margin-left: 300px;margin-top: 50px;font-size:30px;color: #998e96; padding-right: 10px;}
+        .AdminFun{float:left;margin-left: 300px;margin-top: 10px;font-size:30px;color: #998e96; padding-right: 10px;}
         .LoginButton{color:white;margin-left:1050px;margin-top:-60px;font-size:40px;}
         .LoginButton a{color:white;}
         .Content{margin-left:60px;margin-right:500px;color:white;font-family: "Calibri Light", serif}
         .Properties{position: absolute;width: fit-content;top:250px;right:100px;color:white;border:1px solid white;padding:10px;}
         .listQuizLi{list-style-type:circle;font-size:20px;}
         .PropertiesName{font-size:30px;}
-        .startGame{float:right;margin-top:200px;margin-right:180px;background-color: #6b9311;width: 200px;height:200px;border-radius: 50%; }
+        .startGame{float:right;margin-top:230px;margin-right:180px;background-color: #6b9311;width: 200px;height:200px;border-radius: 50%; }
         .startGame:hover{background-color: lawngreen;cursor: pointer}
         .ButtVic{margin-left:18px;margin-top:55px;text-decoration: none;font-size:60px;color:white;}
         .loginText{font-size: 15px;}
         .Login:hover{color:#6b9311;}
         .inActive{color: grey; display:inline;border:1px solid grey;border-radius: 2px;font-size:30px;margin-top:6px;padding:10px;}
+        .dataToFile{ border: 0; font-size: 10px; padding: 0; margin: 0; color: grey;}
+        .dataToFile:hover{ color: white;}
         {% endblock %}
     </style>
 </head>
@@ -53,14 +55,15 @@
         <ul class="AdminMenu">
             <li class="AdminMenuLi"><a href="http://iQuiz/web/QuestionCreate" class="Create/Edit">Create/Edit Question</a></li>
             <li class="AdminMenuLi"><a href="http://iQuiz/web/QuizCreate" class="QuizCreate">Quiz Create</a></li>
+            <li class="AdminMenuLi dataToFile"><a href="http://iQuiz/web/dataToFile" class="dataToFile">output the data to file</a></li>
         </ul>
     </div>
     <div class="Content">
         <p>
             УРАААА!!! Это случилось! Самая крутая, современная и красивая викторина iQuiz открывается!
-            Мы(Николай и Александр) работали не покладая рук, не спали ночами, не спали даже днями, и вот наконец сделали это.
-            В нашей викторине столько функционала, сколько вам и не снилось...
-        <p>ДОБРО ПОЖАЛОВАТЬ, МЫ ВАМ ОЧЕНЬ РАДЫ!</p>
+            Я(Николай) работал не покладая рук, не спал ночами, не спал даже днями, и вот наконец сделал это.
+            В моей викторине столько функционала, сколько вам и не снилось...
+        <P>ДОБРО ПОЖАЛОВАТЬ, Я ВАМ ОЧЕНЬ РАД!</P>
         </p>
     </div>
     <div class="Properties">
